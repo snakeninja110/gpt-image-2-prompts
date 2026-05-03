@@ -26,19 +26,41 @@ It also incorporates Prompt-as-Code and industrial template patterns from [frees
 
 ## Installation
 
-Install from a GitHub repository with the Codex skill installer:
+Default installation includes both the main skill and the short `$g2i` alias.
+
+Clone the repository and run the installer:
+
+```bash
+git clone https://github.com/snakeninja110/gpt-image-2-prompts.git
+cd gpt-image-2-prompts
+./install.sh
+```
+
+If you already installed an older copy, replace it with:
+
+```bash
+./install.sh --force
+```
+
+You can also install from GitHub with the Codex skill installer:
 
 ```bash
 python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
-  --repo OWNER/REPO \
+  --repo snakeninja110/gpt-image-2-prompts \
   --path . \
   --name gpt-image-2-prompts
+
+python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
+  --repo snakeninja110/gpt-image-2-prompts \
+  --path aliases/g2i \
+  --name g2i
 ```
 
-Or copy this folder directly into:
+Or copy both skill folders directly into:
 
-```text
-~/.codex/skills/gpt-image-2-prompts
+```bash
+cp -R . ~/.codex/skills/gpt-image-2-prompts
+cp -R aliases/g2i ~/.codex/skills/g2i
 ```
 
 Restart Codex after installing.
@@ -47,9 +69,15 @@ Restart Codex after installing.
 
 ```text
 .
+├── install.sh
 ├── SKILL.md
 ├── agents/
 │   └── openai.yaml
+├── aliases/
+│   └── g2i/
+│       ├── SKILL.md
+│       └── agents/
+│           └── openai.yaml
 └── references/
     ├── category-patterns.md
     ├── prompt-as-code.md
@@ -69,17 +97,10 @@ $gpt-image-2-prompts 写一个 GPT-Image-2 做图 prompt：主题是[主题]，�
 
 This is the main shortcut. The skill will guide Codex to write prompts as visual direction: goal, subject, composition, scene, camera, lighting, materials, text, style lock, and constraints.
 
-### Optional Short Alias
+### Default Short Alias
 
-This repository includes an optional local alias skill at `aliases/g2i`.
-
-Install it manually if you want a shorter command:
-
-```bash
-cp -R aliases/g2i ~/.codex/skills/g2i
-```
-
-Restart Codex, then use:
+The default installation also installs the short alias skill from `aliases/g2i`.
+Use it when you want a shorter command:
 
 ```text
 $g2i 做一张[图片类型]，主题[主题]，比例[比例]，输出中文 prompt。
