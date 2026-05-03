@@ -36,6 +36,13 @@ For any series, produce a short plan before final prompts:
 
 Use one visual DNA across the whole set. Vary composition, emphasis, and visual anchor instead of changing style every time.
 
+For brand systems, campaign grids, card sets, and touchpoint boards, lock:
+
+- Shared brand strategy and emotional target
+- Repeated color, typography, line, and spacing rules
+- Which assets are variants and which identity details must stay fixed
+- Whether the output is a single board, multiple final images, or both
+
 ## Storyboard Pattern
 
 Use for video ad boards, product TVC concepts, tutorials, motion sequences, or campaign keyframes.
@@ -53,6 +60,10 @@ Include exactly [N] panels:
 Add [language] panel titles, timestamps, and concise notes.
 Avoid wrong panel count, inconsistent subject identity, unreadable labels, random logos, and watermark.
 ```
+
+## Alternative Boards
+
+When the user asks for exploration, generate a board with a main direction plus 1-2 alternatives only when useful. If the user wants a final asset, explicitly say `single final image only` to avoid unwanted moodboards.
 
 ## Slide Or PPT Image Series
 

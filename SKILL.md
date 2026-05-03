@@ -1,13 +1,16 @@
 ---
 name: gpt-image-2-prompts
-description: Create director-style GPT-Image-2 prompts and reusable prompt systems from curated visual patterns. Use when Codex needs to plan, write, revise, or critique prompts for image generation, product ads, e-commerce images, poster illustrations, information graphics, character sheets, UI or social media mockups, multi-panel storyboards, visual slide images, or image series that need consistent style locks.
+description: Create director-style GPT-Image-2 prompts, Prompt-as-Code schemas, and reusable prompt systems from curated visual patterns. Use when Codex needs to plan, write, revise, or critique prompts for image generation, product ads, e-commerce images, brand identity boards, architecture or space renders, poster illustrations, information graphics, data visualization, character sheets, UI or social media mockups, editorial layouts, historical scenes, product teardown boards, multi-panel storyboards, visual slide images, or image series that need consistent style locks.
 ---
 
 # GPT-Image-2 Prompts
 
 Use this skill to turn a visual request into a precise image-generation brief. The working model is: GPT-Image-2 responds best to directed scenes, not loose keyword piles.
 
-Source pattern library: `EvoLinkAI/awesome-gpt-image-2-API-and-Prompts`.
+Source pattern libraries:
+
+- `EvoLinkAI/awesome-gpt-image-2-API-and-Prompts`
+- `freestylefly/awesome-gpt-image-2`
 
 ## Operating Rules
 
@@ -15,9 +18,10 @@ Source pattern library: `EvoLinkAI/awesome-gpt-image-2-API-and-Prompts`.
 - Prefer concrete spatial and production language over vague style adjectives.
 - Preserve user-provided references deliberately: state what must stay the same and what should change.
 - For a series, deck, campaign, or storyboard, define one shared `Style Lock` before writing per-image prompts.
+- For repeatable or agent-facing work, convert the request into a small Prompt-as-Code schema before writing prose.
 - Keep visible text exact, short, and language-specific. If text must be readable, say so explicitly.
 - Include avoid rules for common failures: malformed text, random logos, watermark, distorted anatomy, product drift, cluttered layout, wrong panel count, fake UI, or inconsistent style.
-- Do not copy large prompt examples verbatim from the source repository. Extract the pattern and adapt it to the user's subject.
+- Do not copy large prompt examples verbatim from the source repositories. Extract the pattern and adapt it to the user's subject.
 
 ## Workflow
 
@@ -28,16 +32,23 @@ Source pattern library: `EvoLinkAI/awesome-gpt-image-2-API-and-Prompts`.
    - Poster, illustration, or information graphic
    - Character design
    - UI or social media mockup
+   - Brand identity or logo system
+   - Architecture, interior, or spatial rendering
+   - Editorial document or publication layout
+   - Historical, cultural, or narrative scene
+   - Concept product teardown or research board
    - Multi-panel storyboard or image series
 2. Gather only missing production parameters that materially affect the image:
    - aspect ratio, output count, language of visible text, reference-image preservation, product/brand constraints, and whether the result is a single image or a series.
 3. Read the matching reference file:
    - General prompt structure: `references/prompt-architecture.md`
+   - Prompt-as-Code schemas and anti-failure rules: `references/prompt-as-code.md`
    - Category-specific patterns: `references/category-patterns.md`
    - Multi-image consistency and storyboards: `references/series-workflow.md`
 4. Produce a prompt plan before generation when the task has multiple images, slides, panels, or brand variants.
 5. Write the final prompt in a structured block with:
    - `Goal`
+   - `Inputs` when variables need to stay reusable
    - `Subject`
    - `Composition`
    - `Scene and action`
@@ -49,6 +60,8 @@ Source pattern library: `EvoLinkAI/awesome-gpt-image-2-API-and-Prompts`.
 ## Output Format
 
 For a single image, return one polished prompt plus a short note describing the main control choices.
+
+For an agent-facing or reusable request, return a compact schema first, then the final prompt.
 
 For a series, return:
 

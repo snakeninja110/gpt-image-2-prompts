@@ -66,12 +66,12 @@ Avoid rules:
 
 ## Poster, Illustration, And Information Graphics
 
-Use for city posters, cultural posters, map illustrations, editorial illustrations, and educational visual pages.
+Use for city posters, cultural posters, map illustrations, editorial illustrations, educational visual pages, charts, technical explainers, and data visualization.
 
 Prompt ingredients:
 
 - Poster type and cultural or editorial context
-- Fixed page architecture
+- Fixed page architecture, module count, and information hierarchy
 - Main visual anchor
 - Typography hierarchy
 - Palette, paper texture, print method, illustration medium
@@ -84,6 +84,14 @@ Information graphic layout:
 - Sides: annotations, callouts, detail samples
 - Bottom: process, timeline, legend, or summary
 
+For data or technical diagrams:
+
+- Define chart or diagram type before styling.
+- Use concise labels and a small number of modules.
+- Keep labels readable and aligned to the visual hierarchy.
+- Separate explanation blocks from the central diagram.
+- Avoid dense dashboards unless the user asks for a report-style artifact.
+
 ## Character Design
 
 Use for character sheets, game/anime reference cards, chibi refs, and official-style character pages.
@@ -95,6 +103,13 @@ Prompt ingredients:
 - Outfit, accessories, color palette, materials
 - Front/side/back views or detail panels if needed
 - Reference-card layout, labels, and consistent rendering style
+
+For action reference sheets:
+
+- Lock the grid count, such as 4x4 or 3x3.
+- Keep the same character, outfit, proportions, and face in every panel.
+- Add short action labels, numbering, and motion arrows only where useful.
+- Use a clean background so the poses remain readable.
 
 ## UI And Social Media Mockups
 
@@ -130,3 +145,100 @@ Avoid:
 - Anime drift
 - Over-decoration
 - Unreadable labels
+
+## Brand Identity And Logo Systems
+
+Use for brand direction boards, logo concepts, identity systems, touchpoint boards, packaging systems, and visual manuals.
+
+Prompt ingredients:
+
+- Brand name, industry, audience, personality, competitors, and emotional target
+- 3-5 distinct logo or identity directions when exploring
+- Color system with primary, secondary, accent, and neutral roles
+- Typography direction and hierarchy
+- Touchpoints such as app icon, business card, packaging, website, social post, menu, label, or signage
+- Rules for what must stay consistent across touchpoints
+
+Avoid:
+
+- Treating a logo as a complex illustration
+- Random brand marks or unreadable wordmarks
+- Showing only one logo when the request is for a system
+- Letting packaging, menu, cards, and social assets use unrelated styles
+
+## Architecture And Spatial Rendering
+
+Use for interiors, exteriors, event spaces, retail layouts, concept spaces, and architectural visualization.
+
+Prompt ingredients:
+
+- Space type, function, user flow, zones, and scale
+- Materials such as timber, stone, glass, metal, concrete, fabric, plants, or water
+- Camera position, usually eye-level or controlled wide-angle when accuracy matters
+- Natural and artificial lighting, with warm/cool contrast when useful
+- Time of day, weather, exterior context, and visible view corridors
+
+Avoid:
+
+- Impossible perspective
+- Warped walls or furniture
+- Unclear circulation
+- Decorative style words without material and lighting rules
+
+## Editorial Documents And Publications
+
+Use for menus, magazine spreads, newspapers, reports, catalogs, zines, and publication mockups.
+
+Prompt ingredients:
+
+- Document type and page count or spread type
+- Column grid, margins, title hierarchy, image placement, footnotes, captions, and pull quotes
+- Exact headline and short readable copy
+- Simulated body text for long paragraphs unless exact text is essential
+- Serif or sans-serif direction, palette, and print texture
+
+Avoid:
+
+- Asking for a full page of exact body copy
+- Undefined columns or margins
+- Mixing too many font styles
+- Letting decorative images overpower the editorial structure
+
+## Narrative, Historical, And Cultural Scenes
+
+Use for cinematic scenes, story moments, historical images, poetry visuals, ancient settings, and culturally specific compositions.
+
+Prompt ingredients:
+
+- Exact moment or action, not just a location
+- Time, place, conflict, protagonist, and visual stakes
+- Camera language such as establishing shot, low angle, close-up, or Dutch angle
+- Historical period, clothing structure, architecture, ritual objects, and cultural details
+- Atmosphere, color temperature, and light source
+
+Avoid:
+
+- Period mashups
+- Modern objects in historical scenes
+- Generic scenery without an event
+- Costume drift from unrelated cultures
+
+## Concept Product Research And Teardown Boards
+
+Use for industrial design boards, product teardown visuals, product research boards, exploded diagrams, and concept development sheets.
+
+Prompt ingredients:
+
+- Product or object type and design inspiration
+- Central hero render of the final concept
+- Shape analysis, silhouette extraction, structure lines, or force-flow annotations
+- 3-5 evolution steps from inspiration to final form
+- Ergonomic, usage, or scale validation
+- Layered structure, material stack, components, and key specifications
+
+Avoid:
+
+- Only drawing a pretty final product
+- Overloading the board with paragraphs
+- Losing the inspiration's recognizable traits
+- Making a concept that looks impossible to manufacture or use
