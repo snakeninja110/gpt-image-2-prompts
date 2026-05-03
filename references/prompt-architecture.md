@@ -7,16 +7,17 @@ For reusable workflows, read `prompt-as-code.md` first and turn the request into
 ## Director Brief Order
 
 1. **Goal**: Define the image's job, such as product main image, luxury campaign ad, editorial poster, UI screenshot, or character reference card.
-2. **Inputs**: Capture reusable variables: subject, audience, aspect ratio, language, required text, reference images, brand constraints, module count, and output use.
-3. **Subject**: Specify the exact product, person, object, character, environment, or interface.
-4. **Composition**: Define canvas ratio, viewpoint, crop, layout grid, module count, focal hierarchy, negative space, and foreground/midground/background.
-5. **Scene and action**: Describe the moment, interaction, gesture, product use, sequence, or narrative.
-6. **Camera and rendering**: Use medium-specific language: 35mm film, direct flash, telephoto editorial portrait, photorealistic CGI, architectural visualization, engraved ink drawing, printed poster, isometric miniature, app screenshot.
-7. **Lighting**: Name source, direction, intensity, color, contrast, shadows, reflections, rim light, bloom, bokeh, or volumetric effects.
-8. **Materials and texture**: Specify surfaces such as matte packaging, brushed steel, glass, paper fiber, skin texture, fabric weave, food gloss, UI glassmorphism, ceramic glaze.
-9. **Color system**: State dominant palette, accent colors, temperature, contrast, and brand-color limits.
-10. **Text**: Give exact visible text, language, placement, hierarchy, and readability requirements. If no text, say no text.
-11. **Constraints**: Add avoid rules for common failure modes.
+2. **Case pattern applied**: Name the reusable case pattern being transferred and why it fits.
+3. **Inputs**: Capture reusable variables: subject, audience, aspect ratio, language, required text, reference images, brand constraints, module count, and output use.
+4. **Subject**: Specify the exact product, person, object, character, environment, or interface.
+5. **Composition**: Define canvas ratio, viewpoint, crop, layout grid, module count, focal hierarchy, negative space, and foreground/midground/background.
+6. **Scene and action**: Describe the moment, interaction, gesture, product use, sequence, or narrative.
+7. **Camera and rendering**: Use medium-specific language: 35mm film, direct flash, telephoto editorial portrait, photorealistic CGI, architectural visualization, engraved ink drawing, printed poster, isometric miniature, app screenshot.
+8. **Lighting**: Name source, direction, intensity, color, contrast, shadows, reflections, rim light, bloom, bokeh, or volumetric effects.
+9. **Materials and texture**: Specify surfaces such as matte packaging, brushed steel, glass, paper fiber, skin texture, fabric weave, food gloss, UI glassmorphism, ceramic glaze.
+10. **Color system**: State dominant palette, accent colors, temperature, contrast, and brand-color limits.
+11. **Text**: Give exact visible text, language, placement, hierarchy, and readability requirements. If no text, say no text.
+12. **Constraints**: Add avoid rules for common failure modes.
 
 ## Reusable Prompt Skeleton
 
@@ -25,6 +26,9 @@ Create [output type] for [goal/audience].
 
 Goal:
 [What the image must accomplish.]
+
+Case pattern applied:
+[Case-derived pattern and how it is transferred to the user's subject.]
 
 Inputs:
 [Reusable variables: audience, aspect ratio, language, reference image handling, required modules, exact text.]
@@ -58,6 +62,7 @@ Constraints:
 - For text-heavy outputs, specify fewer words and larger type.
 - For product consistency, repeat identity-critical traits: shape, color, material, label, proportions.
 - For reference images, explicitly separate `preserve` from `change`.
+- For case-inspired outputs, transfer the layout and production logic, not the original case's product, brand, or scene.
 - For complex images, state exact counts and positions when they matter.
 - For structured designs, lock module count, grid, titles, label language, and hierarchy before style.
 - For posters, first define whether it is a single poster, multi-option board, contact sheet, or research board.

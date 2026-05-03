@@ -2,11 +2,13 @@
 
 [中文版](README.zh-CN.md)
 
-A Codex skill for writing director-style GPT-Image-2 prompts from reusable visual patterns.
+A Codex skill for writing director-style GPT-Image-2 prompts from reusable visual patterns and case-derived production playbooks.
 
-This skill is inspired by the prompt organization and case categories in [EvoLinkAI/awesome-gpt-image-2-API-and-Prompts](https://github.com/EvoLinkAI/awesome-gpt-image-2-API-and-Prompts). It does not copy the source prompt collection; it distills the workflow into reusable prompt-writing guidance for image generation tasks.
+This skill is inspired by the prompt organization and case categories in [EvoLinkAI/awesome-gpt-image-2-API-and-Prompts](https://github.com/EvoLinkAI/awesome-gpt-image-2-API-and-Prompts). It does not copy the source prompt collection; it distills strong cases into reusable production patterns for image generation tasks.
 
 It also incorporates Prompt-as-Code and industrial template patterns from [freestylefly/awesome-gpt-image-2](https://github.com/freestylefly/awesome-gpt-image-2), with deduplication against the existing category guidance.
+
+The skill is designed to produce actual usable prompts, not just writing advice. For each request, it selects and adapts a case pattern such as miniature product theater, 9-panel TVC storyboard, luxury hero ad, whitepaper information atlas, UI/social screenshot hybrid, brand touchpoint board, museum plate, or exploded teardown board.
 
 ## What It Helps With
 
@@ -23,6 +25,7 @@ It also incorporates Prompt-as-Code and industrial template patterns from [frees
 - Concept product teardown and research boards
 - Multi-panel storyboards and image series
 - Visual slide images that need a consistent style lock
+- Case-derived pattern transfer into production-ready prompts
 
 ## Installation
 
@@ -80,6 +83,7 @@ Restart Codex after installing.
 │           └── openai.yaml
 └── references/
     ├── category-patterns.md
+    ├── case-playbook.md
     ├── prompt-as-code.md
     ├── prompt-architecture.md
     └── series-workflow.md
@@ -95,7 +99,7 @@ Use the skill name directly in Codex:
 $gpt-image-2-prompts 写一个 GPT-Image-2 做图 prompt：主题是[主题]，比例[比例]，风格[风格]，用途[用途]。
 ```
 
-This is the main shortcut. The skill will guide Codex to write prompts as visual direction: goal, subject, composition, scene, camera, lighting, materials, text, style lock, and constraints.
+This is the main shortcut. The skill will guide Codex to write prompts as visual direction: goal, selected case pattern, subject, composition, scene, camera, lighting, materials, text, style lock, and constraints.
 
 ### Default Short Alias
 
@@ -122,6 +126,17 @@ $gpt-image-2-prompts 根据下面需求写一个 GPT-Image-2 prompt：
 语言：[中文/英文/双语/无文字]
 风格：[参考风格]
 必须避免：[不要出现的内容]
+```
+
+### Case-Derived Prompt
+
+```text
+$gpt-image-2-prompts 借鉴优秀案例模式，为下面需求写一个可直接出图的 GPT-Image-2 prompt：
+需求：[产品/品牌/海报/信息图/UI/分镜/拆解板]
+目标：[投放/展示/解释/转化/社媒传播]
+比例：[比例]
+语言：[中文/英文/无文字]
+要求：先说明使用了哪种案例模式，再输出最终 prompt。
 ```
 
 ### Prompt-as-Code
@@ -242,4 +257,4 @@ This project is a workflow-oriented Codex skill derived from studying the public
 - https://github.com/EvoLinkAI/awesome-gpt-image-2-API-and-Prompts
 - https://github.com/freestylefly/awesome-gpt-image-2
 
-It should be treated as an independent prompt-writing guide, not a mirror of either original prompt dataset.
+It should be treated as an independent case-pattern transfer and prompt-generation guide, not a mirror of either original prompt dataset.

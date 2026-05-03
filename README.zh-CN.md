@@ -2,11 +2,13 @@
 
 [English](README.md)
 
-这是一个 Codex 技能，用于基于可复用的视觉模式，编写导演式 GPT-Image-2 做图 prompt。
+这是一个 Codex 技能，用于基于可复用的视觉模式和案例沉淀的生产级 playbook，编写导演式 GPT-Image-2 做图 prompt。
 
-本技能受到 [EvoLinkAI/awesome-gpt-image-2-API-and-Prompts](https://github.com/EvoLinkAI/awesome-gpt-image-2-API-and-Prompts) 中 prompt 组织方式和案例分类的启发。它不会复制原始 prompt 集合，而是将工作流提炼为适用于图像生成任务的可复用 prompt 写作指南。
+本技能受到 [EvoLinkAI/awesome-gpt-image-2-API-and-Prompts](https://github.com/EvoLinkAI/awesome-gpt-image-2-API-and-Prompts) 中 prompt 组织方式和案例分类的启发。它不会复制原始 prompt 集合，而是把优秀案例沉淀成适用于图像生成任务的可复用生产模式。
 
 它也吸收了 [freestylefly/awesome-gpt-image-2](https://github.com/freestylefly/awesome-gpt-image-2) 中的 Prompt-as-Code 和工业化模板模式，并与现有分类指导做了去重整合。
+
+这个技能的目标不是只提供写作建议，而是产出可直接使用的 prompt。每次处理需求时，它会选择并迁移一种案例模式，例如微缩产品剧场、9 宫格 TVC 分镜、奢侈品英雄广告、白皮书信息图谱、UI/社媒截图混合、品牌触点板、博物馆图版或爆炸拆解板。
 
 ## 能帮你做什么
 
@@ -23,6 +25,7 @@
 - 概念产品拆解和研究板
 - 多格分镜和系列图片
 - 需要统一风格锁定的图片版幻灯片
+- 将优秀案例模式迁移为生产级 prompt
 
 ## 安装
 
@@ -80,6 +83,7 @@ cp -R aliases/g2i ~/.codex/skills/g2i
 │           └── openai.yaml
 └── references/
     ├── category-patterns.md
+    ├── case-playbook.md
     ├── prompt-as-code.md
     ├── prompt-architecture.md
     └── series-workflow.md
@@ -95,7 +99,7 @@ cp -R aliases/g2i ~/.codex/skills/g2i
 $gpt-image-2-prompts 写一个 GPT-Image-2 做图 prompt：主题是[主题]，比例[比例]，风格[风格]，用途[用途]。
 ```
 
-这是主要快捷方式。技能会引导 Codex 以视觉导演的方式写 prompt：目标、主体、构图、场景、镜头、光线、材质、文字、风格锁定和约束。
+这是主要快捷方式。技能会引导 Codex 以视觉导演的方式写 prompt：目标、选用的案例模式、主体、构图、场景、镜头、光线、材质、文字、风格锁定和约束。
 
 ### 默认短别名
 
@@ -122,6 +126,17 @@ $gpt-image-2-prompts 根据下面需求写一个 GPT-Image-2 prompt：
 语言：[中文/英文/双语/无文字]
 风格：[参考风格]
 必须避免：[不要出现的内容]
+```
+
+### 案例模式迁移
+
+```text
+$gpt-image-2-prompts 借鉴优秀案例模式，为下面需求写一个可直接出图的 GPT-Image-2 prompt：
+需求：[产品/品牌/海报/信息图/UI/分镜/拆解板]
+目标：[投放/展示/解释/转化/社媒传播]
+比例：[比例]
+语言：[中文/英文/无文字]
+要求：先说明使用了哪种案例模式，再输出最终 prompt。
 ```
 
 ### Prompt-as-Code
@@ -242,4 +257,4 @@ $gpt-image-2-prompts 写一张概念产品研发拆解板 prompt：
 - https://github.com/EvoLinkAI/awesome-gpt-image-2-API-and-Prompts
 - https://github.com/freestylefly/awesome-gpt-image-2
 
-它应被视为一份独立的 prompt 写作指南，而不是任一原始 prompt 数据集的镜像。
+它应被视为一份独立的案例模式迁移与 prompt 生成指南，而不是任一原始 prompt 数据集的镜像。

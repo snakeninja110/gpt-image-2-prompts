@@ -14,6 +14,10 @@ Do not duplicate category guidance already in `category-patterns.md`. Use this f
 {
   "type": "[output category]",
   "objective": "[what the image must accomplish]",
+  "case_pattern": {
+    "name": "[selected pattern from case-playbook.md]",
+    "transfer": "[how the pattern is adapted to this subject]"
+  },
   "inputs": {
     "subject": "[main subject]",
     "audience": "[target viewer]",
@@ -45,17 +49,19 @@ Do not duplicate category guidance already in `category-patterns.md`. Use this f
 After filling the schema, write the natural-language prompt in this order:
 
 1. State the output type and objective.
-2. Lock the layout and module count.
-3. Describe the subject and identity-critical traits.
-4. Define composition, camera, lighting, materials, and palette.
-5. Add exact text requirements.
-6. Add constraints and failure prevention.
+2. State the case pattern being applied and what is being transferred.
+3. Lock the layout and module count.
+4. Describe the subject and identity-critical traits.
+5. Define composition, camera, lighting, materials, and palette.
+6. Add exact text requirements.
+7. Add constraints and failure prevention.
 
 ## Validation Checklist
 
 Before finalizing, check:
 
 - The output type is unambiguous.
+- The selected case pattern fits the user's goal and has been adapted, not copied.
 - Required text is hard-coded or explicitly omitted.
 - Module count, panel count, or card count is specified when relevant.
 - The main visual is not competing with too many secondary elements.

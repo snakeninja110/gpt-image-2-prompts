@@ -1,7 +1,7 @@
 interface:
   display_name: "G2I"
-  short_description: "Short GPT-Image-2 prompt alias"
-  default_prompt: "Use $g2i to write a GPT-Image-2 prompt for an image, ad, poster, storyboard, UI mockup, or visual slide deck."
+  short_description: "Short case-prompt alias"
+  default_prompt: "Use $g2i to apply a case-derived pattern and write a GPT-Image-2 prompt for an image, ad, poster, storyboard, UI mockup, or visual slide deck."
 
 policy:
   allow_implicit_invocation: true
