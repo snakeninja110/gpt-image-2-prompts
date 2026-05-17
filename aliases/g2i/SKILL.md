@@ -1,6 +1,6 @@
 ---
 name: g2i
-description: Shortcut alias for the gpt-image-2-prompts skill. Use when the user invokes $g2i or wants a shorter command for GPT-Image-2 prompt writing, product ads, information graphics, UI mockups, storyboards, brand boards, visual slide images, Prompt-as-Code schemas, or case-derived image prompt patterns.
+description: Shortcut alias for the gpt-image-2-prompts skill. Use when the user invokes $g2i or wants a shorter command for GPT-Image-2 prompt writing, product ads, information graphics, concept typography posters, analysis report interfaces, UI or live mockups, identity-preserving photo remixes, storyboards, brand boards, visual slide images, Prompt-as-Code schemas, or case-derived image prompt patterns.
 ---
 
 # G2I Shortcut

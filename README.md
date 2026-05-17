@@ -8,7 +8,7 @@ This skill is inspired by the prompt organization and case categories in [EvoLin
 
 It also incorporates Prompt-as-Code and industrial template patterns from [freestylefly/awesome-gpt-image-2](https://github.com/freestylefly/awesome-gpt-image-2), with deduplication against the existing category guidance.
 
-The skill is designed to produce actual usable prompts, not just writing advice. For each request, it selects and adapts a case pattern such as miniature product theater, 9-panel TVC storyboard, luxury hero ad, whitepaper information atlas, UI/social screenshot hybrid, brand touchpoint board, museum plate, or exploded teardown board.
+The skill is designed to produce actual usable prompts, not just writing advice. For each request, it selects and adapts a case pattern such as miniature product theater, 9-panel TVC storyboard, luxury hero ad, typography-as-hero poster, scientific scale diagram, analysis report interface, live UI screenshot, identity-preserving photo remix, brand touchpoint board, museum plate, or exploded teardown board.
 
 ## What It Helps With
 
@@ -18,8 +18,10 @@ The skill is designed to produce actual usable prompts, not just writing advice.
 - Architecture, interiors, and spatial renderings
 - Portrait and photography prompts
 - Posters, illustrations, and information graphics
+- Concept typography posters and scientific scale diagrams
 - Character sheets and reference cards
-- UI and social media mockups
+- UI, social media, live, and analysis report mockups
+- Identity-preserving photo remixes and style transfers
 - Editorial layouts and publication visuals
 - Historical, cultural, and narrative scenes
 - Concept product teardown and research boards

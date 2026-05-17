@@ -87,6 +87,30 @@ Transfer moves:
 - Use professional editorial styling: whitepaper, museum board, technical magazine, or atlas plate.
 - Make visible text short, large, and language-specific.
 
+### Scientific Scale Diagram
+
+Use for scientific subjects, materials, biology, ecology, technology stacks, cities, climate systems, food systems, or any topic that benefits from micro-to-macro comparison.
+
+Transfer moves:
+
+- Arrange 6-8 scale windows from smallest to largest, using circles, hexagons, cards, or a vertical zoom ladder.
+- Give each scale one short label, one unit or magnification cue, and one highly detailed visual sample.
+- Connect the scales with thin lines, arrows, or nested framing so the viewer understands progression.
+- Use scientific editorial styling: crisp render detail, restrained color coding, clean legends, and generous spacing.
+- Avoid generic magnifying-glass imagery, equal-looking scale panels, long body text, and unclear size relationships.
+
+### Analysis Report Interface
+
+Use for beauty reports, skin or face analysis, shopping recommendations, style diagnostics, health-adjacent explainers, and decision-support cards.
+
+Transfer moves:
+
+- Structure the image as a report interface: diagnosis or summary first, evidence modules second, recommendations or product cards third.
+- Use cards, ratings, badges, face or object anchors, before/after slots, and simple reason labels.
+- Keep claims non-medical unless the user supplies medical context; describe visual or lifestyle recommendations, not clinical conclusions.
+- Keep the face, product, or profile identity stable when comparing variants.
+- Avoid dense microcopy, unreadable metrics, unsupported medical claims, and recommendations that do not map to the shown evidence.
+
 ### UI Plus Social Screenshot Hybrid
 
 Use for app launch visuals, social proof mockups, notebook pages, product screenshots, and platform-native posts.
@@ -99,6 +123,18 @@ Transfer moves:
 - Make the interface believable with spacing, icons, hierarchy, status bars, and interaction states.
 - Avoid fake unreadable UI labels unless decorative text is acceptable.
 
+### Live Interface Screenshot
+
+Use for livestream rooms, shopping streams, creator broadcasts, game streams, social live events, and platform-native interaction screenshots.
+
+Transfer moves:
+
+- Lock the platform, aspect ratio, live-room type, and UI chrome before describing the content.
+- Layer the scene with host, background, comment stream, viewer count, like or gift effects, product card, bottom input bar, and action icons.
+- Keep overlays away from the host's face and the product hero area.
+- Use realistic platform spacing and short readable comments in the requested language.
+- Avoid mixing platform conventions, cluttering the center, unreadable comments, and UI elements that block the subject.
+
 ### Editorial Or Publication Spread
 
 Use for menus, magazines, newspapers, reports, catalogs, and document mockups.
@@ -109,6 +145,18 @@ Transfer moves:
 - Use exact short headlines and simulated body text for long copy.
 - Keep typographic hierarchy restrained and readable.
 - Anchor the design with one strong photo, illustration, chart, or artifact.
+
+### Typography-As-Hero Poster
+
+Use for title-led posters, name posters, conceptual typography, signatures, wordmarks, album or book covers, and campaign headlines where exact spelling matters.
+
+Transfer moves:
+
+- Make the exact word, name, or title the main visual structure of the image, not a caption.
+- Translate meaning into letterform behavior: weight, width, spacing, distortion, texture, negative space, overlap, or interaction with a portrait or object.
+- Use one strong visual metaphor and a restrained 4-6 color system.
+- State `single final poster only` when the user wants one finished asset, not a moodboard or option sheet.
+- Avoid misspelling, extra large text, generic word art, default-font feel, unrelated icons, and cluttered collage.
 
 ## Brand And System Patterns
 
@@ -134,6 +182,30 @@ Transfer moves:
 - Keep a shared campaign identity: palette, typography, prop language, lighting, pose, texture, and headline system.
 - Vary subject pose, product angle, or scene role while maintaining one visual system.
 - Add one campaign title and short per-frame labels if useful.
+
+### Sports Campaign Motion Grid
+
+Use for sportswear, athlete posters, fitness campaigns, outdoor gear, and social launch packs.
+
+Transfer moves:
+
+- Build a fixed 2x2, 3-panel, or 4-panel campaign grid with one shared brand voice.
+- Give each frame a different action role: sprint, climb, jump, lift, rest, product detail, terrain proof, or team moment.
+- Use oversized gear, diagonal body motion, dust, snow, sweat, paint strokes, route marks, stickers, or handwritten data only when they reinforce the sport.
+- Lock the campaign system: one typography family, one headline rhythm, repeated graphic marks, and a controlled palette with per-panel accents.
+- Avoid wrong equipment, mismatched uniforms, random sports brands, unreadable slogans, and collage clutter.
+
+### Surreal Brand World Poster
+
+Use for fictional products, speculative services, AI tools, launch concepts, and brand-world posters.
+
+Transfer moves:
+
+- Treat the offering as a believable product with physical form, named features, price or launch cues, and one clear CTA.
+- Build a surreal but commercially legible world around the product: miniature cities, impossible production machines, oversized objects, portals, or theatrical sets.
+- Keep the advertising layout disciplined: headline, hero object, feature area, proof or variant strip, and closing call to action.
+- Use cinematic commercial lighting and material detail so the concept feels sellable rather than only fantastical.
+- Avoid vague "future AI" decoration, impossible product identity, and generic sci-fi posters without a business promise.
 
 ## Character, Portrait, And Culture Patterns
 
@@ -169,6 +241,30 @@ Transfer moves:
 - Use film stock, direct flash, neon, rim light, golden hour, rain reflections, or documentary texture only when relevant.
 - Preserve facial identity from references if provided.
 - Avoid plastic skin, distorted anatomy, and fake blur over the subject.
+
+### Identity-Preserving Photo Remix
+
+Use for transforming uploaded portraits or lifestyle photos into new styles while retaining the person's identity, original subject, or base composition.
+
+Transfer moves:
+
+- Split the request into Preserve, Change, and Do not change before writing the prompt.
+- Preserve face shape, key facial features, skin tone, expression logic, pose, product shape, or original composition only when required.
+- Change style, wardrobe, environment, lighting, era, illustration medium, overlays, or story world according to the user's target.
+- For playful edits, add elements that interact with the original subject: mini versions, doodle extensions, stickers, motion marks, mirror-selfie overlays, or character companions.
+- Avoid identity drift, copied unwanted background, overpainting the face, changing body structure, and decorative elements that do not physically relate to the original photo.
+
+### Motion Or Expression Reference Grid
+
+Use for action sequences, dance or sports motion, facial expression sheets, FACS-style boards, pose references, and training or performance breakdowns.
+
+Transfer moves:
+
+- Use a fixed panel grid with consistent identity, outfit, camera distance, and lighting.
+- Define each panel's action unit, motion phase, expression, or pose label before style.
+- Use arrows, numbering, color coding, and short labels to show progression or category.
+- Keep the subject's proportions and face stable across all panels.
+- Avoid duplicated poses, missing labels, inconsistent identity, and cinematic blur that hides the reference value.
 
 ## Product Research And Technical Patterns
 

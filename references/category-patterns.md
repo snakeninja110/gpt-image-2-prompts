@@ -64,6 +64,19 @@ Avoid rules:
 - No fake blur on the subject
 - No airbrushed face unless explicitly requested
 
+For identity-preserving photo remixes:
+
+- Write `Preserve`, `Change`, and `Do not change` controls before the final prompt.
+- Preserve identity-critical facial features, skin tone, expression logic, pose, product shape, or composition only when the user needs them.
+- Add playful overlays, mini versions, doodles, stickers, character companions, or mirror-selfie elements only when they physically interact with the base image.
+- Avoid changing identity, overpainting the face, or leaving unrelated decorations floating around the subject.
+
+For motion or expression grids:
+
+- Define panel count, grid layout, labels, and the action or expression in each panel.
+- Keep identity, outfit, camera distance, and lighting consistent.
+- Use arrows, numbering, color coding, and short labels where they improve reference value.
+
 ## Poster, Illustration, And Information Graphics
 
 Use for city posters, cultural posters, map illustrations, editorial illustrations, educational visual pages, charts, technical explainers, and data visualization.
@@ -91,6 +104,26 @@ For data or technical diagrams:
 - Keep labels readable and aligned to the visual hierarchy.
 - Separate explanation blocks from the central diagram.
 - Avoid dense dashboards unless the user asks for a report-style artifact.
+
+For scientific scale diagrams:
+
+- Define the scale progression before styling, such as nano to macro, cell to organism, room to city, or component to system.
+- Use 6-8 scale windows with one unit or magnification cue per window.
+- Keep every label short and make the size relationship visible.
+- Avoid generic magnifying-glass metaphors and panels that all appear the same scale.
+
+For concept typography posters:
+
+- Use the exact title, name, or word as the main visual structure.
+- Describe how the letterforms behave: scale, weight, spacing, overlap, texture, distortion, negative space, and interaction with figures or objects.
+- Request `single final poster only` unless the user explicitly wants alternatives.
+- Avoid extra large readable text, misspellings, generic word art, and default-font lettering.
+
+For sports campaign posters:
+
+- Lock sport, athlete or product, body action, equipment, terrain, and campaign headline.
+- Use dynamic motion, diagonal composition, controlled graphic marks, and brand-level color systems.
+- Keep equipment accurate and do not mix unrelated sport cues.
 
 ## Character Design
 
@@ -123,6 +156,20 @@ Prompt ingredients:
 - Typography, spacing, and icon style
 - Capture context if needed, such as desk photo, amateur phone shot, or clean product mockup
 - No fake unreadable microcopy unless text is intentionally decorative
+
+For live interface screenshots:
+
+- Specify platform, live-room type, aspect ratio, and overlay stack.
+- Include host area, comments, viewer count, like/gift effects, product card or CTA, and bottom input/action bar when relevant.
+- Keep overlays away from faces and hero products.
+- Use short readable comments in the requested language.
+
+For analysis or recommendation reports:
+
+- Structure the layout as summary, evidence, and recommendations.
+- Use cards, badges, ratings, profile anchors, before/after slots, and product or action cards.
+- Avoid medical claims unless the user explicitly asks and provides suitable context.
+- Keep recommendation logic simple enough to read visually.
 
 ## Cultural Or Museum-Style Information Pages
 

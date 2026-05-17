@@ -1,7 +1,7 @@
 interface:
   display_name: "GPT Image 2 Prompts"
   short_description: "Case-derived image prompts"
-  default_prompt: "Use $gpt-image-2-prompts to apply a case-derived pattern and write a GPT-Image-2 prompt for an image, ad, poster, storyboard, UI mockup, or visual slide deck."
+  default_prompt: "Use $gpt-image-2-prompts to apply a case-derived pattern and write a GPT-Image-2 prompt for an image, ad, poster, typography design, report interface, UI/live mockup, storyboard, or visual slide deck."
 
 policy:
   allow_implicit_invocation: true

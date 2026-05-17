@@ -32,13 +32,22 @@ Do not duplicate category guidance already in `category-patterns.md`. Use this f
   "structure": {
     "layout": "[grid, poster, card set, research board, split view]",
     "modules": ["[module 1]", "[module 2]"],
-    "hierarchy": "[primary visual first, secondary information second]"
+    "hierarchy": "[primary visual first, secondary information second]",
+    "panel_count": "[exact count when relevant]",
+    "scale_sequence": ["[smallest scale]", "[largest scale]"],
+    "report_flow": ["[summary]", "[evidence]", "[recommendation]"]
   },
   "style": {
     "medium": "[photo, CGI, editorial, vector, illustration]",
     "palette": "[dominant and accent colors]",
     "lighting": "[lighting system]",
-    "materials": ["[texture/material requirements]"]
+    "materials": ["[texture/material requirements]"],
+    "typography_behavior": "[how exact text behaves as a visual object]"
+  },
+  "interaction_layers": {
+    "platform_chrome": "[status bar, comments, tabs, product cards, live overlays]",
+    "subject_overlays": ["[mini versions, doodles, stickers, callouts]"],
+    "occlusion_rules": ["[what must not be covered]"]
   },
   "constraints": ["[avoid rule]", "[quality rule]"]
 }
@@ -53,8 +62,9 @@ After filling the schema, write the natural-language prompt in this order:
 3. Lock the layout and module count.
 4. Describe the subject and identity-critical traits.
 5. Define composition, camera, lighting, materials, and palette.
-6. Add exact text requirements.
-7. Add constraints and failure prevention.
+6. Add exact text requirements, including spelling and typography behavior when text is the hero.
+7. Add interaction layers or overlays only when they improve the output.
+8. Add constraints and failure prevention.
 
 ## Validation Checklist
 
@@ -73,12 +83,18 @@ Before finalizing, check:
 
 - For posters: specify `single final poster only` if you do not want a moodboard or multiple options.
 - For concept typography: make the exact word the main visual and require correct spelling.
+- For title-led posters: specify how the letters are constructed and ban extra dominant text.
 - For data or information graphics: lock module count, chart type, labels, and hierarchy before style.
+- For scientific scale diagrams: define the scale order, unit cues, and 6-8 distinct windows before styling.
 - For product images: keep copy to 1-2 short claims and make materials plus lighting explicit.
 - For beauty recommendation or analysis images: require analysis first, then recommendation mapping; keep the same face if comparing variants.
+- For live screenshots: lock platform chrome, comments, product cards, and face/hero-product occlusion rules.
 - For brand systems: define strategy, audience, and emotional target before logo or touchpoint visuals.
+- For sports campaigns: lock sport, equipment, pose/action, grid count, and campaign typography system.
 - For architecture: use eye-level or controlled camera angles when perspective accuracy matters.
 - For photography: use concrete lens/aperture/film language instead of generic realism.
+- For identity-preserving photo remixes: separate Preserve, Change, and Do not change before adding style.
+- For motion/expression grids: lock panel count, per-panel label, identity, outfit, camera, and lighting.
 - For illustration: specify brushwork, line behavior, or rendering technique; avoid relying only on artist names.
 - For historical scenes: name the period and ban modern elements.
 - For editorial layouts: use simulated body text unless exact copy is short enough to control.

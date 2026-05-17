@@ -1,6 +1,6 @@
 ---
 name: gpt-image-2-prompts
-description: Create director-style GPT-Image-2 prompts, Prompt-as-Code schemas, and reusable prompt systems from curated visual patterns and case-derived playbooks. Use when Codex needs to plan, write, revise, or critique prompts for image generation, product ads, e-commerce images, brand identity boards, architecture or space renders, poster illustrations, information graphics, data visualization, character sheets, UI or social media mockups, editorial layouts, historical scenes, product teardown boards, multi-panel storyboards, visual slide images, or image series that need consistent style locks.
+description: Create director-style GPT-Image-2 prompts, Prompt-as-Code schemas, and reusable prompt systems from curated visual patterns and case-derived playbooks. Use when Codex needs to plan, write, revise, or critique prompts for image generation, product ads, e-commerce images, brand identity boards, architecture or space renders, poster illustrations, concept typography posters, information graphics, scientific scale diagrams, analysis report interfaces, data visualization, character sheets, UI, live, or social media mockups, identity-preserving photo remixes, editorial layouts, historical scenes, product teardown boards, multi-panel storyboards, visual slide images, or image series that need consistent style locks.
 ---
 
 # GPT-Image-2 Prompts
@@ -34,12 +34,14 @@ Source pattern libraries:
    - Advertising creative
    - Portrait or photography
    - Poster, illustration, or information graphic
+   - Concept typography poster or title-led visual
    - Character design
-   - UI or social media mockup
+   - UI, social media mockup, live interface, or analysis report
    - Brand identity or logo system
    - Architecture, interior, or spatial rendering
    - Editorial document or publication layout
    - Historical, cultural, or narrative scene
+   - Identity-preserving photo remix or style transfer
    - Concept product teardown or research board
    - Multi-panel storyboard or image series
 2. Gather only missing production parameters that materially affect the image:
@@ -51,7 +53,7 @@ Source pattern libraries:
    - Case-derived playbooks and transfer patterns: `references/case-playbook.md`
    - Multi-image consistency and storyboards: `references/series-workflow.md`
 4. Choose a case transfer:
-   - Name the selected pattern internally, such as miniature product theater, 9-panel TVC board, luxury hero ad, technical teardown board, UI/social screenshot, museum information plate, brand touchpoint board, or series card grid.
+   - Name the selected pattern internally, such as miniature product theater, 9-panel TVC board, luxury hero ad, typography-as-hero poster, analysis report interface, identity-preserving photo remix, technical teardown board, UI/social screenshot, museum information plate, brand touchpoint board, or series card grid.
    - Map the pattern's reusable moves to the user's subject: visual anchor, layout system, scene logic, text hierarchy, camera or rendering language, and avoid rules.
    - Combine two compatible patterns only when it improves the output, such as product teardown plus brand board.
 5. Produce a prompt plan before generation when the task has multiple images, slides, panels, or brand variants.
