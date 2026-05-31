@@ -7,12 +7,23 @@ A Codex skill for writing director-style GPT-Image-2 prompts from reusable visua
 > **For New Users**
 >
 > If you have no programming or AI prompt-writing experience, think of this as an image-request rewriter: describe the image you want in plain language, and it will turn that request into a more professional image-generation prompt. This skill does not generate the image directly. It generates a prompt you can paste into GPT-Image-2, ChatGPT image generation, or another image-generation tool.
+>
+> Compared with asking AI to write a random prompt directly, this skill follows a fixed image-production workflow: it selects a suitable case pattern, then fills in composition, camera, lighting, text, and constraints. That makes the output more stable, more reusable, and less likely to suffer from malformed text, product drift, cluttered composition, or inconsistent style.
 
-This skill is inspired by the prompt organization and case categories in [EvoLinkAI/awesome-gpt-image-2-API-and-Prompts](https://github.com/EvoLinkAI/awesome-gpt-image-2-API-and-Prompts). It does not copy the source prompt collection; it distills strong cases into reusable production patterns for image generation tasks.
+## Why Not Just Ask AI To Write A Prompt?
 
-It also incorporates Prompt-as-Code and industrial template patterns from [freestylefly/awesome-gpt-image-2](https://github.com/freestylefly/awesome-gpt-image-2), with deduplication against the existing category guidance.
+You can ask AI to write a prompt directly, but the result often depends on how you phrase that one request. This skill turns image-prompt writing into a stable workflow: it identifies the image type, applies a relevant case pattern, then fills in composition, camera, lighting, text, and constraints.
 
-The skill is designed to produce actual usable prompts, not just writing advice. For each request, it selects and adapts a case pattern such as miniature product theater, 9-panel TVC storyboard, luxury hero ad, typography-as-hero poster, scientific scale diagram, analysis report interface, live UI screenshot, identity-preserving photo remix, brand touchpoint board, museum plate, or exploded teardown board.
+The practical advantages are:
+
+- **More consistent output**: Each result follows a clear structure instead of drifting between ad copy, loose description, and generic prompt text.
+- **Better image direction**: It transfers proven patterns for product ads, information graphics, UI mockups, storyboards, brand boards, and other visual formats to your actual subject.
+- **Fewer common failures**: It adds controls for malformed text, random logos, product drift, cluttered layouts, inconsistent identity, wrong panel counts, and other frequent image-generation problems.
+- **Easier for beginners**: You can describe the image in plain language, and the skill fills in low-risk defaults such as aspect ratio, use case, visible language, and image format.
+- **Better for iteration**: If the first image is not right, you can say what failed, what to keep, and what to change, then get a clearer revised prompt.
+- **Better for references and series**: It separates what to preserve, what to change, and what must not change, which helps with identity-preserving edits, product consistency, and multi-image style locks.
+
+In short: a general AI may give you a polished description; this skill gives you a controlled, reusable, and easier-to-revise image-generation brief.
 
 ## What It Helps With
 
@@ -438,6 +449,10 @@ $gpt-image-2-prompts 写一张概念产品研发拆解板 prompt：
 必须展示：[形态分析/迭代步骤/结构拆解/材料/规格/使用场景]
 风格：工业设计提案板，技术图纸 + 产品摄影混合。
 ```
+
+## Sources And Method
+
+This skill references the case categories in [EvoLinkAI/awesome-gpt-image-2-API-and-Prompts](https://github.com/EvoLinkAI/awesome-gpt-image-2-API-and-Prompts), plus the Prompt-as-Code and industrial template ideas from [freestylefly/awesome-gpt-image-2](https://github.com/freestylefly/awesome-gpt-image-2). It does not copy the original prompts; it turns reusable methods into a practical image-prompt workflow.
 
 ## Attribution
 
