@@ -4,6 +4,10 @@
 
 这是一个 Codex 技能，用于基于可复用的视觉模式和案例沉淀的生产级 playbook，编写导演式 GPT-Image-2 做图 prompt。
 
+> **给新手的说明**
+>
+> 如果你没有编程经验，也不了解 AI prompt，可以把它理解成一个“作图需求改写器”：你用日常语言描述想做什么图，它会帮你改写成更专业、更容易出图的图片生成指令。这个技能不会直接生成图片，它会生成一段可以复制到 GPT-Image-2、ChatGPT 图片生成或其他图片生成工具里的 prompt。
+
 本技能受到 [EvoLinkAI/awesome-gpt-image-2-API-and-Prompts](https://github.com/EvoLinkAI/awesome-gpt-image-2-API-and-Prompts) 中 prompt 组织方式和案例分类的启发。它不会复制原始 prompt 集合，而是把优秀案例沉淀成适用于图像生成任务的可复用生产模式。
 
 它也吸收了 [freestylefly/awesome-gpt-image-2](https://github.com/freestylefly/awesome-gpt-image-2) 中的 Prompt-as-Code 和工业化模板模式，并与现有分类指导做了去重整合。
@@ -31,23 +35,97 @@
 
 ## 安装
 
-默认安装会同时安装主技能和短别名 `$g2i`。
+安装时会同时安装主技能和短别名 `g2i`。Codex 使用 `$g2i` 调用，Claude Code 使用 `/g2i` 调用。
 
-克隆仓库并运行安装脚本：
+### Codex 用户
+
+最简单的方式是让 Codex 帮你安装。打开 Codex，把下面这段话复制进去：
+
+```text
+请帮我安装这个 Codex skill：
+https://github.com/snakeninja110/gpt-image-2-prompts
+
+要求：
+1. 先检查本机是否已经安装了 ~/.codex/skills/gpt-image-2-prompts 和 ~/.codex/skills/g2i。
+2. 如果没有安装，请克隆仓库并运行 ./install.sh --target codex。
+3. 如果已经安装旧版本，请运行 ./install.sh --target codex --force 更新。
+4. 安装完成后告诉我需要重启 Codex，并用 $g2i 测试是否可用。
+```
+
+如果你在 Codex 里看到权限确认，请允许它运行安装所需的命令。
+
+如果你熟悉终端，也可以自己运行：
 
 ```bash
 git clone https://github.com/snakeninja110/gpt-image-2-prompts.git
 cd gpt-image-2-prompts
-./install.sh
+./install.sh --target codex
 ```
 
-如果你已经安装过旧版本，可以用下面命令替换：
+### Claude Code 用户
+
+最简单的方式是让 Claude Code 帮你安装。打开 Claude Code，把下面这段话复制进去：
+
+```text
+请帮我安装这个 Claude Code skill：
+https://github.com/snakeninja110/gpt-image-2-prompts
+
+要求：
+1. 先检查本机是否已经安装了 ~/.claude/skills/gpt-image-2-prompts 和 ~/.claude/skills/g2i。
+2. 如果没有安装，请克隆仓库并运行 ./install.sh --target claude。
+3. 如果已经安装旧版本，请运行 ./install.sh --target claude --force 更新。
+4. 安装完成后告诉我需要启动或重启 Claude Code，并用 /g2i 测试是否可用。
+```
+
+如果 Claude Code 请求执行命令权限，请允许它运行安装所需的命令。
+
+如果你熟悉终端，也可以自己运行：
 
 ```bash
-./install.sh --force
+git clone https://github.com/snakeninja110/gpt-image-2-prompts.git
+cd gpt-image-2-prompts
+./install.sh --target claude
 ```
 
-也可以使用 Codex 技能安装器从 GitHub 仓库安装：
+### 手动安装
+
+如果你同时使用 Codex 和 Claude Code，可以一次安装到两个工具：
+
+```bash
+git clone https://github.com/snakeninja110/gpt-image-2-prompts.git
+cd gpt-image-2-prompts
+./install.sh --target both
+```
+
+如果你已经安装过旧版本，选择对应目标更新：
+
+```bash
+./install.sh --target codex --force
+./install.sh --target claude --force
+./install.sh --target both --force
+```
+
+安装后重启 Codex，或启动/重启 Claude Code。
+
+### 检查是否安装成功
+
+Codex 用户输入：
+
+```text
+$g2i 测试一下：帮我写一张咖啡产品广告图 prompt，比例 1:1
+```
+
+Claude Code 用户输入：
+
+```text
+/g2i 测试一下：帮我写一张咖啡产品广告图 prompt，比例 1:1
+```
+
+如果回复里出现 `Case pattern applied` 和一段完整 prompt，说明安装成功。
+
+### 备用安装方式
+
+如果上面的方式不适合你的 Codex 环境，可以使用 Codex 技能安装器从 GitHub 仓库安装：
 
 ```bash
 python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
@@ -68,7 +146,14 @@ cp -R . ~/.codex/skills/gpt-image-2-prompts
 cp -R aliases/g2i ~/.codex/skills/g2i
 ```
 
-安装后重启 Codex。
+Claude Code 用户也可以直接复制到：
+
+```bash
+cp -R . ~/.claude/skills/gpt-image-2-prompts
+cp -R aliases/g2i ~/.claude/skills/g2i
+```
+
+复制完成后同样需要重启 Codex，或启动/重启 Claude Code。
 
 ## 技能目录结构
 
@@ -93,6 +178,13 @@ cp -R aliases/g2i ~/.codex/skills/g2i
 
 ## 使用方式
 
+### 第一次使用流程
+
+1. 在 Codex 输入 `$g2i`，或在 Claude Code 输入 `/g2i`，再加你的作图需求。
+2. 工具会返回一段更专业的 prompt。
+3. 复制这段 prompt。
+4. 粘贴到 GPT-Image-2、ChatGPT 图片生成或其他图片生成工具里出图。
+
 ### 主快捷命令
 
 在 Codex 中直接使用技能名：
@@ -101,22 +193,44 @@ cp -R aliases/g2i ~/.codex/skills/g2i
 $gpt-image-2-prompts 写一个 GPT-Image-2 做图 prompt：主题是[主题]，比例[比例]，风格[风格]，用途[用途]。
 ```
 
+在 Claude Code 中使用斜杠命令：
+
+```text
+/gpt-image-2-prompts 写一个 GPT-Image-2 做图 prompt：主题是[主题]，比例[比例]，风格[风格]，用途[用途]。
+```
+
 这是主要快捷方式。技能会引导 Codex 以视觉导演的方式写 prompt：目标、选用的案例模式、主体、构图、场景、镜头、光线、材质、文字、风格锁定和约束。
 
 ### 默认短别名
 
-默认安装也会从 `aliases/g2i` 安装短别名技能。
+安装时也会从 `aliases/g2i` 安装短别名技能。
 如果你想使用更短的命令，可以直接使用：
 
 ```text
 $g2i 做一张[图片类型]，主题[主题]，比例[比例]，输出中文 prompt。
 ```
 
-该别名会委托给 `$gpt-image-2-prompts`，不会重复实现主工作流。
+Claude Code 中对应使用：
+
+```text
+/g2i 做一张[图片类型]，主题[主题]，比例[比例]，输出中文 prompt。
+```
+
+该别名会委托给主技能，不会重复实现主工作流。
 
 ## Prompt 起手式
 
-复制下面片段到 Codex，并按需填写。
+复制下面片段到 Codex，并按需填写。Claude Code 用户可以把开头的 `$g2i` 换成 `/g2i`，把 `$gpt-image-2-prompts` 换成 `/gpt-image-2-prompts`。
+
+### 最简单
+
+```text
+$g2i 我想做一张图片：
+内容是：[一句话描述]
+用途是：[发小红书/做广告/放网站/做封面]
+风格是：[高级/可爱/科技/极简/真实摄影]
+比例是：[1:1 / 16:9 / 9:16]
+```
 
 ### 通用
 

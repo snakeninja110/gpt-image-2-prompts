@@ -1,16 +1,17 @@
 ---
 name: g2i
-description: Shortcut alias for the gpt-image-2-prompts skill. Use when the user invokes $g2i or wants a shorter command for GPT-Image-2 prompt writing, product ads, information graphics, concept typography posters, analysis report interfaces, UI or live mockups, identity-preserving photo remixes, storyboards, brand boards, visual slide images, Prompt-as-Code schemas, or case-derived image prompt patterns.
+description: Shortcut alias for the gpt-image-2-prompts skill. Use when the user invokes $g2i, /g2i, or wants a shorter command for GPT-Image-2 prompt writing, product ads, information graphics, concept typography posters, analysis report interfaces, UI or live mockups, identity-preserving photo remixes, storyboards, brand boards, visual slide images, Prompt-as-Code schemas, or case-derived image prompt patterns.
 ---
 
 # G2I Shortcut
 
-This is a short alias for `$gpt-image-2-prompts`.
+This is a short alias for the main `gpt-image-2-prompts` skill.
 
-When invoked, use the main skill instructions from:
+When invoked, use the main skill instructions from the active agent's skill directory:
 
 ```text
 ~/.codex/skills/gpt-image-2-prompts/SKILL.md
+~/.claude/skills/gpt-image-2-prompts/SKILL.md
 ```
 
 If that local path is unavailable, use the same operating model:
