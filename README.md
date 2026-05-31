@@ -178,6 +178,13 @@ Restart Codex, or start/restart Claude Code after copying the folders.
 
 ## Usage
 
+### Command Cheat Sheet
+
+| Environment | Main command | Short command |
+| --- | --- | --- |
+| Codex | `$gpt-image-2-prompts` | `$g2i` |
+| Claude Code | `/gpt-image-2-prompts` | `/g2i` |
+
 ### First Use Flow
 
 1. In Codex, type `$g2i`; in Claude Code, type `/g2i`; then add your image request.
@@ -222,6 +229,19 @@ The alias delegates to the main skill; it does not duplicate the main workflow.
 
 Copy and fill these snippets in Codex. Claude Code users can replace `$g2i` with `/g2i`, and `$gpt-image-2-prompts` with `/gpt-image-2-prompts`.
 
+### Which Starter Should I Use?
+
+| What you want | Use this starter |
+| --- | --- |
+| Product listing image or marketplace hero image | E-commerce Main Image |
+| Ad poster or brand campaign visual | Product Ad |
+| Social cover or social media image | Simplest Starter / Information Graphic |
+| App, website, or dashboard screenshot | UI Mockup |
+| Concept, process, or educational explanation | Information Graphic |
+| Multiple images with one consistent style, or visual slide images | Visual Slide Series |
+| Video concept, ad board, or tutorial sequence | Storyboard |
+| Reference-image edit that must preserve identity or product appearance | Reference Image Remix |
+
 ### Simplest Starter
 
 ```text
@@ -230,6 +250,59 @@ $g2i 我想做一张图片：
 用途是：[发小红书/做广告/放网站/做封面]
 风格是：[高级/可爱/科技/极简/真实摄影]
 比例是：[1:1 / 16:9 / 9:16]
+```
+
+### Final Prompt Only
+
+```text
+$g2i 帮我写一个 GPT-Image-2 prompt，只输出最终 prompt，不要解释：
+内容：[一句话描述]
+用途：[用途]
+比例：[比例]
+```
+
+### Complete Example
+
+User input:
+
+```text
+$g2i 我想做一张图片：
+内容是：一杯冷萃咖啡放在透明玻璃杯里，旁边有冰块和咖啡豆
+用途是：咖啡店新品海报
+风格是：高级、清爽、真实摄影
+比例是：1:1
+```
+
+You should get a result with a structure like this:
+
+```text
+Case pattern applied: luxury hero ad
+
+Final prompt:
+Create a 1:1 premium product poster for a new cold brew coffee...
+```
+
+Copy the full text after `Final prompt` into GPT-Image-2, ChatGPT image generation, or another image-generation tool.
+
+### Improve A Bad Result
+
+```text
+$g2i 根据上一次 prompt 帮我优化：
+问题：[文字不清楚/主体变形/画面太乱/不像产品图/比例不对]
+保留：[想保留的部分]
+改成：[想调整的方向]
+输出：一版新的最终 prompt。
+```
+
+### Reference Image Remix
+
+```text
+$g2i 我会提供一张参考图，请帮我写 GPT-Image-2 prompt：
+保留：[人物长相/产品外观/logo/颜色/构图]
+改变：[背景/风格/场景/光线/服装]
+不要改变：[最重要的身份特征]
+用途：[用途]
+比例：[比例]
 ```
 
 ### Universal

@@ -27,6 +27,18 @@ Source pattern libraries:
 - Do not stop at generic advice. The final output must contain a production-ready prompt that embodies the selected case pattern.
 - Do not copy large prompt examples verbatim from the source repositories. Extract the pattern, rename every concrete product/brand/scene unless the user supplied it, and adapt the structure to the user's use case.
 
+## Default Assumptions
+
+Use sensible defaults instead of asking follow-up questions when the missing detail is low risk:
+
+- Aspect ratio: default to `1:1` for product, e-commerce, and social posts; `16:9` for presentations, dashboards, landscapes, and web hero images; `9:16` for vertical stories, reels, and mobile-first scenes.
+- Visible language: default to Chinese when the user's request is Chinese, English when the user's request is English, and no visible text when text is not needed.
+- Output count: default to one final image unless the user asks for options, a series, a storyboard, or multiple slides.
+- Use case: if unspecified, infer a practical display use such as social post, product listing, concept presentation, or cover image from the subject.
+- Detail level: when the user gives a short request, produce a complete prompt with clearly labeled assumptions instead of asking them to fill a long form.
+
+Ask a follow-up only when the missing information changes the core identity or could cause a bad result: exact product or brand identity, reference-image preservation, legally or commercially sensitive visible text, required panel/page count, or whether a person/product must remain unchanged.
+
 ## Workflow
 
 1. Classify the task:
