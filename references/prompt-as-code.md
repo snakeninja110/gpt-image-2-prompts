@@ -24,9 +24,14 @@ Do not duplicate category guidance already in `category-patterns.md`. Use this f
     "aspect_ratio": "[e.g. 16:9, 9:16, 1:1]",
     "language": "[visible text language]",
     "required_text": ["[exact title]", "[exact subtitle]"],
+    "source_identity": {
+      "logo_or_brand_reference": "[supplied logo, mark, or brand cue]",
+      "product_reference": "[supplied product or packaging reference]"
+    },
     "reference_handling": {
       "preserve": ["[identity-critical details]"],
-      "change": ["[style or scene changes]"]
+      "change": ["[style or scene changes]"],
+      "do_not_change": ["[details that must remain untouched]"]
     }
   },
   "structure": {
@@ -35,14 +40,19 @@ Do not duplicate category guidance already in `category-patterns.md`. Use this f
     "hierarchy": "[primary visual first, secondary information second]",
     "panel_count": "[exact count when relevant]",
     "scale_sequence": ["[smallest scale]", "[largest scale]"],
-    "report_flow": ["[summary]", "[evidence]", "[recommendation]"]
+    "report_flow": ["[summary]", "[evidence]", "[recommendation]"],
+    "worldbuilding_assets": ["[architecture]", "[characters]", "[vehicles]", "[map]"],
+    "physical_ui_layout": "[post card, story frame, feed tile, comment band, CTA strip]"
   },
   "style": {
     "medium": "[photo, CGI, editorial, vector, illustration]",
     "palette": "[dominant and accent colors]",
     "lighting": "[lighting system]",
     "materials": ["[texture/material requirements]"],
-    "typography_behavior": "[how exact text behaves as a visual object]"
+    "typography_behavior": "[how exact text behaves as a visual object]",
+    "brand_world": "[palette, material language, mood, lighting, and repeatable signature motifs]",
+    "collage_system": "[paper layers, cutouts, stickers, tape, doodles, shadows]",
+    "signature_system": "[stroke rhythm, pressure, baseline, ligatures, practice or exploration mode]"
   },
   "interaction_layers": {
     "platform_chrome": "[status bar, comments, tabs, product cards, live overlays]",
@@ -73,6 +83,7 @@ Before finalizing, check:
 - The output type is unambiguous.
 - The selected case pattern fits the user's goal and has been adapted, not copied.
 - Required text is hard-coded or explicitly omitted.
+- Source identity is protected when the user supplies a logo, product, person, or brand reference.
 - Module count, panel count, or card count is specified when relevant.
 - The main visual is not competing with too many secondary elements.
 - Brand, product, or character identity rules are repeated where consistency matters.
@@ -87,13 +98,20 @@ Before finalizing, check:
 - For data or information graphics: lock module count, chart type, labels, and hierarchy before style.
 - For scientific scale diagrams: define the scale order, unit cues, and 6-8 distinct windows before styling.
 - For product images: keep copy to 1-2 short claims and make materials plus lighting explicit.
+- For brand-envelope product ads: define the brand world before placing the product, and preserve product identity.
+- For brand guideline boards: analyze the supplied logo first and derive palette, typography, touchpoints, and do/don't rules from it.
 - For beauty recommendation or analysis images: require analysis first, then recommendation mapping; keep the same face if comparing variants.
 - For live screenshots: lock platform chrome, comments, product cards, and face/hero-product occlusion rules.
+- For physical social screenshots: lock the platform layout before translating it into physical props or tabletop staging.
 - For brand systems: define strategy, audience, and emotional target before logo or touchpoint visuals.
 - For sports campaigns: lock sport, equipment, pose/action, grid count, and campaign typography system.
 - For architecture: use eye-level or controlled camera angles when perspective accuracy matters.
 - For photography: use concrete lens/aperture/film language instead of generic realism.
 - For identity-preserving photo remixes: separate Preserve, Change, and Do not change before adding style.
+- For scrapbook collage posters: specify paper layers, cutout edges, tape, stickers, and one clear hierarchy before style.
+- For worldbuilding kits: define world rules before listing assets, and keep material, silhouette, and palette consistent across the kit.
+- For Apple-style natural science posters: keep the subject as a single product-like hero with sparse labels and white-space discipline.
+- For signature typography: lock exact spelling, decide exploration versus practice, and avoid generic calligraphy or tiny unreadable forms.
 - For motion/expression grids: lock panel count, per-panel label, identity, outfit, camera, and lighting.
 - For illustration: specify brushwork, line behavior, or rendering technique; avoid relying only on artist names.
 - For historical scenes: name the period and ban modern elements.

@@ -62,6 +62,18 @@ Transfer moves:
 - Lock the palette to 2-4 colors tied to the product or brand.
 - Describe brand marks only if supplied by the user; otherwise ban random logos.
 
+### Brand Envelope Product Ad
+
+Use for brand-consistent product ads, campaign refreshes, product-line extensions, and cases where the same brand world must support multiple products.
+
+Transfer moves:
+
+- Start with a short brand anchor: palette, material language, light quality, emotional tone, and visual signature.
+- Inject the product into that brand world so the environment, props, typography, and color accents serve the product instead of competing with it.
+- Specify the output format: square hero ad, vertical story, marketplace main image, web hero, or campaign poster.
+- Add 1-3 repeatable brand elements such as grain, shadow treatment, frame motif, packaging symbol, background texture, or graphic border.
+- Avoid letting the brand world overpower the product, adding random logos, or changing product identity between variants.
+
 ### Isometric Luxury Model
 
 Use for real estate, cities, campuses, venues, exhibition concepts, product ecosystems, and strategic maps.
@@ -99,6 +111,18 @@ Transfer moves:
 - Use scientific editorial styling: crisp render detail, restrained color coding, clean legends, and generous spacing.
 - Avoid generic magnifying-glass imagery, equal-looking scale panels, long body text, and unclear size relationships.
 
+### Apple-Style Natural Science Poster
+
+Use for animals, plants, minerals, insects, ecological details, natural objects, or science posters that should feel premium, minimal, and product-like.
+
+Transfer moves:
+
+- Put one natural subject in a clean white or near-white stage as the hero, photographed or rendered with product-level lighting and real contact shadow.
+- Use very few information elements: exact title, scientific or common name, 3-5 short fact labels, and optional scale cue.
+- Keep the page airy with generous negative space, crisp typography, and restrained accent color.
+- Make the subject tactile and inspectable: surface, texture, anatomy, specimen details, or natural material behavior.
+- Avoid traditional busy infographic grids, decorative borders, beige classroom poster styling, and long explanatory paragraphs.
+
 ### Analysis Report Interface
 
 Use for beauty reports, skin or face analysis, shopping recommendations, style diagnostics, health-adjacent explainers, and decision-support cards.
@@ -122,6 +146,18 @@ Transfer moves:
 - Use exact visible headline and section labels; keep microcopy sparse or simulated.
 - Make the interface believable with spacing, icons, hierarchy, status bars, and interaction states.
 - Avoid fake unreadable UI labels unless decorative text is acceptable.
+
+### Physical Social Screenshot
+
+Use for social campaign images, platform-native content concepts, dining or desk scenes, launch posts, and cases where a digital post layout becomes a real physical scene.
+
+Transfer moves:
+
+- Choose the platform structure first: post card, story, feed tile, comment band, profile header, or interaction strip.
+- Translate UI zones into physical staging: tabletop bands, printed cards, food plates, props, product labels, sticky notes, or camera-frame overlays.
+- Use a top-down or controlled oblique camera so the platform layout remains legible while the materials feel real.
+- Keep exact visible text short and locked; reserve clean areas for username, caption, reactions, or CTA.
+- Avoid mixing platform conventions, making the UI band unreadable, or letting props break the intended post hierarchy.
 
 ### Live Interface Screenshot
 
@@ -158,6 +194,30 @@ Transfer moves:
 - State `single final poster only` when the user wants one finished asset, not a moodboard or option sheet.
 - Avoid misspelling, extra large text, generic word art, default-font feel, unrelated icons, and cluttered collage.
 
+### Signature Typography System
+
+Use for names, personal brands, creator marks, autograph explorations, signature practice sheets, and typography systems where handwritten form matters.
+
+Transfer moves:
+
+- Treat the exact name or word as the product: preserve spelling, stroke direction, rhythm, weight, and personality.
+- For exploration, show a controlled set of 4-8 signature directions with short style labels, not a chaotic sheet.
+- For extraction or practice, isolate one selected signature and break it into stroke order, pressure, ligatures, baseline, spacing, and repeatable practice rows.
+- Use restrained editorial layout, large readable signature forms, and minimal supporting labels.
+- Avoid generic calligraphy, unreadable tiny signatures, random flourishes, cluttered color palettes, and default font effects.
+
+### Scrapbook Collage Poster
+
+Use for social covers, lifestyle posters, travel journals, fashion boards, magazine collage rewrites, memory pages, and soft brand campaigns.
+
+Transfer moves:
+
+- Build the image from paper layers, cutouts, photo scraps, tape, stickers, doodles, hand labels, and whitespace.
+- Keep one clear subject or story hierarchy; collage texture should support the message, not turn into noise.
+- Use a defined palette, paper grain, shadow depth, and edge treatment so the collage feels physical.
+- Add short handwritten or editorial labels only where useful.
+- Avoid random stickers, illegible microcopy, mismatched visual eras, and flat digital collage with no material logic.
+
 ## Brand And System Patterns
 
 ### Brand Touchpoint Board
@@ -171,6 +231,18 @@ Transfer moves:
 - Show consistent visual DNA across packaging, card, screen, social post, label, signage, or merch.
 - Use clear grouping and labels.
 - Avoid unrelated styles between touchpoints, random wordmarks, and overcomplicated logos.
+
+### Brand Guideline Board From Logo
+
+Use when the user supplies a logo, mark, wordmark, or existing brand cue and wants a client-ready guideline board or brand manual page.
+
+Transfer moves:
+
+- Analyze the supplied mark first: geometry, personality, industry fit, color cues, type direction, and likely audience.
+- Extract or infer a brand system: primary palette, secondary palette, accent colors, typography direction, layout rhythm, and tone keywords.
+- Show brand rules and touchpoints in one board: logo lockups, color swatches, type samples, icon/app usage, packaging or business card, website or social tile.
+- Include 3-5 practical do/don't rules so the identity can be reused, not just admired.
+- Avoid inventing a new unrelated logo, using random colors outside the source identity, or making the board only a moodboard without rules.
 
 ### Campaign Grid
 
@@ -206,6 +278,18 @@ Transfer moves:
 - Keep the advertising layout disciplined: headline, hero object, feature area, proof or variant strip, and closing call to action.
 - Use cinematic commercial lighting and material detail so the concept feels sellable rather than only fantastical.
 - Avoid vague "future AI" decoration, impossible product identity, and generic sci-fi posters without a business promise.
+
+### Worldbuilding Kit
+
+Use for game concepts, film pitches, IP bibles, speculative civilizations, story worlds, product universes, and campaign worlds that need a cohesive visual system.
+
+Transfer moves:
+
+- Define one world premise and one visual grammar before listing assets: era, climate, technology level, culture, materials, palette, and mood.
+- Include a controlled asset set such as architecture, characters, clothing, vehicles, tools, map, symbols, environment samples, and key scene.
+- Use one shared design language across every asset: silhouette rules, material logic, color coding, ornament level, and lighting.
+- Organize the output as a board or kit with clear sections and short labels.
+- Avoid mixing unrelated genres, producing isolated pretty images, or changing the world rules between assets.
 
 ## Character, Portrait, And Culture Patterns
 

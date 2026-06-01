@@ -22,6 +22,7 @@ Useful structures:
 - Feature breakdown
 - 9-panel TVC storyboard
 - Before/after product benefit image
+- Brand-envelope product ad when brand world consistency matters
 
 ## Advertising Creative
 
@@ -34,6 +35,7 @@ Prompt ingredients:
 - Premium lighting language
 - Reflection, motion streaks, oversized headline, architectural staging, or editorial set design
 - Tight palette and intentional typography
+- Brand world rules when the ad must remain consistent across products or campaign variants
 
 Style directions:
 
@@ -119,6 +121,26 @@ For concept typography posters:
 - Request `single final poster only` unless the user explicitly wants alternatives.
 - Avoid extra large readable text, misspellings, generic word art, and default-font lettering.
 
+For signature or name typography systems:
+
+- Lock exact spelling and decide whether the output is exploration, extraction, or practice.
+- For exploration, use 4-8 controlled signature directions with short labels.
+- For practice, show stroke order, pressure, baseline, ligatures, and repeat rows.
+- Avoid generic calligraphy sheets, tiny unreadable signatures, and random flourishes.
+
+For scrapbook or paper collage posters:
+
+- Define paper layers, cutout edges, tape, stickers, doodles, shadow depth, and photo scraps.
+- Keep one subject or story hierarchy so the collage does not become random decoration.
+- Use short handwritten or editorial labels only where they support the story.
+- Avoid mismatched eras, unreadable microcopy, random stickers, and flat digital collage without material logic.
+
+For Apple-style natural science posters:
+
+- Place one natural subject as a product-like hero on a white or near-white stage.
+- Use only a title, scientific/common name, 3-5 fact labels, and optional scale cue.
+- Keep negative space generous and avoid traditional busy infographic grids.
+
 For sports campaign posters:
 
 - Lock sport, athlete or product, body action, equipment, terrain, and campaign headline.
@@ -164,6 +186,13 @@ For live interface screenshots:
 - Keep overlays away from faces and hero products.
 - Use short readable comments in the requested language.
 
+For physical social screenshots:
+
+- Define the source platform layout before styling: post card, story, feed tile, profile band, comments, or CTA area.
+- Translate interface regions into physical staging such as tabletop bands, printed cards, props, food plates, or sticky notes.
+- Use top-down or controlled oblique camera so the platform structure stays legible.
+- Keep exact text short and avoid mixing platform conventions.
+
 For analysis or recommendation reports:
 
 - Structure the layout as summary, evidence, and recommendations.
@@ -205,6 +234,7 @@ Prompt ingredients:
 - Typography direction and hierarchy
 - Touchpoints such as app icon, business card, packaging, website, social post, menu, label, or signage
 - Rules for what must stay consistent across touchpoints
+- Logo or mark analysis when the user supplies an existing identity source
 
 Avoid:
 
@@ -212,6 +242,20 @@ Avoid:
 - Random brand marks or unreadable wordmarks
 - Showing only one logo when the request is for a system
 - Letting packaging, menu, cards, and social assets use unrelated styles
+
+For brand guideline boards from a supplied logo:
+
+- Analyze geometry, palette, type direction, personality, and audience before designing the board.
+- Include logo lockups, color swatches, type samples, app or icon usage, packaging or card mockups, and 3-5 do/don't rules.
+- Keep every color and graphic cue derived from the supplied identity unless the user asks for a redesign.
+- Avoid inventing a different brand or turning the guideline board into a moodboard with no reusable rules.
+
+For brand-envelope product ads:
+
+- Define the brand world first: palette, material language, light quality, emotional tone, and signature motifs.
+- Inject the product into that world while keeping product shape, label, and material stable.
+- Specify output format such as square ad, vertical story, web hero, or marketplace image.
+- Avoid making the environment more important than the product.
 
 ## Architecture And Spatial Rendering
 
@@ -269,6 +313,13 @@ Avoid:
 - Modern objects in historical scenes
 - Generic scenery without an event
 - Costume drift from unrelated cultures
+
+For worldbuilding kits:
+
+- Define the world premise, era, climate, technology level, culture, materials, palette, and mood before listing assets.
+- Include a coherent asset set such as architecture, characters, clothing, vehicles, tools, symbols, map, and environment samples.
+- Keep silhouette, material logic, ornament level, and color coding consistent across the kit.
+- Avoid unrelated genre mixing or isolated images that do not share the same rules.
 
 ## Concept Product Research And Teardown Boards
 

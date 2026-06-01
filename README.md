@@ -30,15 +30,18 @@ In short: a general AI may give you a polished description; this skill gives you
 - Product and e-commerce images
 - Advertising creative
 - Brand identity and touchpoint systems
+- Brand guideline boards, brand worlds, and product campaign extensions
 - Architecture, interiors, and spatial renderings
 - Portrait and photography prompts
 - Posters, illustrations, and information graphics
-- Concept typography posters and scientific scale diagrams
+- Concept typography posters, signature systems, and scientific scale diagrams
 - Character sheets and reference cards
-- UI, social media, live, and analysis report mockups
+- UI, social media, live, physical social screenshots, and analysis report mockups
 - Identity-preserving photo remixes and style transfers
+- Scrapbook, paper collage, and lifestyle posters
 - Editorial layouts and publication visuals
 - Historical, cultural, and narrative scenes
+- Game, film, IP, and brand worldbuilding kits
 - Concept product teardown and research boards
 - Multi-panel storyboards and image series
 - Visual slide images that need a consistent style lock
@@ -249,6 +252,13 @@ Copy and fill these snippets in Codex. Claude Code users can replace `$g2i` with
 | Social cover or social media image | Simplest Starter / Information Graphic |
 | App, website, or dashboard screenshot | UI Mockup |
 | Concept, process, or educational explanation | Information Graphic |
+| Premium natural science poster | Information Graphic / Natural Science Poster |
+| Brand guidelines, logo extension, or brand manual | Brand Guideline Board |
+| Product ad inside one brand world | Brand Envelope Product Ad |
+| Platform screenshot turned into a real scene | Physical Social Screenshot |
+| Scrapbook, collage, or lifestyle cover | Scrapbook Collage Poster |
+| Game, film, IP, or brand world | Worldbuilding Kit |
+| Name, signature, or personal-brand lettering | Signature Typography System |
 | Multiple images with one consistent style, or visual slide images | Visual Slide Series |
 | Video concept, ad board, or tutorial sequence | Storyboard |
 | Reference-image edit that must preserve identity or product appearance | Reference Image Remix |
@@ -391,6 +401,84 @@ $gpt-image-2-prompts 写一张品牌触点系统视觉板 prompt：
 触点：[包装/名片/App 图标/网站/社媒/菜单/标签]
 调性：[现代极简/奢华编辑/科技品牌/日式留白]
 约束：不是单个 logo，要展示统一品牌系统。
+```
+
+### Brand Guideline Board
+
+```text
+$gpt-image-2-prompts 根据我提供的 logo/品牌视觉，写一张品牌规范板 prompt：
+品牌名：[品牌名]
+行业：[行业]
+受众：[目标用户]
+需要展示：[Logo 规范/色板/字体/图形元素/名片/App 图标/包装/网站/社媒]
+要求：先分析现有 logo 的几何、颜色和气质，再生成可复用的品牌规则。
+```
+
+### Brand Envelope Product Ad
+
+```text
+$gpt-image-2-prompts 写一张品牌统一的产品广告 prompt：
+品牌身份：[品牌关键词、颜色、材质、光影、情绪]
+产品：[产品名和外观]
+输出格式：[方形广告/竖版 story/电商主图/网页 hero]
+品牌元素：[纹理/边框/图形符号/包装语言]
+约束：产品是主角，品牌世界要统一但不能盖过产品。
+```
+
+### Physical Social Screenshot
+
+```text
+$gpt-image-2-prompts 写一张物理化社媒截图 prompt：
+平台结构：[Instagram/X/小红书/抖音 story/feed/post]
+真实场景：[餐桌/办公桌/旅行手账/产品拍摄台]
+主体：[产品/食物/人物/活动]
+界面区域：[用户名/标题/评论/点赞/CTA]
+约束：像真实物体组成的平台帖子，文字短且可读。
+```
+
+### Scrapbook Collage Poster
+
+```text
+$gpt-image-2-prompts 写一张纸张拼贴/手账风海报 prompt：
+主题：[主题]
+主体：[人物/产品/旅行地点/生活方式]
+素材感：[纸张/胶带/贴纸/手写标签/照片剪贴/涂鸦]
+调性：[温暖/复古/春日/街头/杂志感]
+比例：[比例]
+约束：拼贴要有主次，不要随机贴纸和乱码文字。
+```
+
+### Worldbuilding Kit
+
+```text
+$gpt-image-2-prompts 写一张世界观资产包 prompt：
+世界观：[一句话设定]
+类型：[游戏/影视/IP/品牌世界/概念设定]
+必须包含：[建筑/角色/服装/交通工具/工具/地图/符号/关键场景]
+视觉规则：[时代/气候/技术水平/材质/颜色/文化线索]
+要求：先输出统一 Style Lock，再写最终 prompt。
+```
+
+### Natural Science Poster
+
+```text
+$gpt-image-2-prompts 写一张 Apple 式自然科普海报 prompt：
+对象：[动物/植物/矿物/昆虫/自然物]
+信息：[3-5 个短标签或事实]
+风格：白底、高级、极简、像产品发布海报。
+比例：[比例]
+约束：主体像棚拍产品一样清晰，文字少而准，不要传统拥挤信息图。
+```
+
+### Signature Typography System
+
+```text
+$gpt-image-2-prompts 写一张签名/姓名字体系统 prompt：
+姓名或文字：[准确文字]
+用途：[个人品牌/签名选择/练习拆解/海报标题]
+方向：[极简/优雅/力量感/实验/手写感]
+输出：[多方案选择/单款签名提取/练习拆解图]
+约束：拼写必须准确，签名要大而清晰，不要普通字体拼贴。
 ```
 
 ### UI Mockup
